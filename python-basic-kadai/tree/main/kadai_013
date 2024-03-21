@@ -1,3 +1,5 @@
-def total_price(price, tax_rate=0.10):
-  toral = price + (price + tax_rate)
+def total_price(price, tax_rate):
+  total = price + (price * tax_rate)
   return total
+
+print(total_price(1200,0.10))
