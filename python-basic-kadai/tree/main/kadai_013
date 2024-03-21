@@ -1,6 +1,3 @@
-def total_price(price, tax):
-    tax_amount = price * (tax / 100)
-    total_price = price + tax_amount
-    print(f"{price}円（税込 : {total_price}円）")
-
-total_price(100, 8)
+def total_price(price, tax_rate=0.10):
+  toral = price + (price + tax_rate)
+  return total
