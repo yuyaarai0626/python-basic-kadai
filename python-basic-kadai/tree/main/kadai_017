@@ -11,9 +11,13 @@ class Human:
     else:
       print(f"{self.name}は未成年です。")
  
-#リスト作成 
 human1 = Human("侍太郎", 35) 
 human2 = Human("侍一郎", 15)
 human3 = Human("侍次郎", 25)
 
-human1.check_adult()
+#リスト作成
+humans = [human1, human2, human3]
+
+#繰り返し処理
+for human in humans:
+  human.check_adult()
